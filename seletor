@@ -1,0 +1,43 @@
+function setup() {
+  createCanvas(400, 200);
+  background(220);
+
+  // Crie os botões
+  button1 = createButton('0 a 10 anos');
+  button1.position(50, 50);
+  button1.mousePressed(recommendMovies1);
+
+  button2 = createButton('12 a 14 anos');
+  button2.position(50, 100);
+  button2.mousePressed(recommendMovies2);
+
+  button3 = createButton('16 a 18 anos');
+  button3.position(50, 150);
+  button3.mousePressed(recommendMovies3);
+
+  // Crie as checkboxes
+  checkboxAcao = createCheckbox('Ação', false);
+  checkboxAcao.position(200, 50);
+
+  checkboxRomance = createCheckbox('Romance', false);
+  checkboxRomance.position(200, 100);
+
+  checkboxComedia = createCheckbox('Comédia', false);
+  checkboxComedia.position(200, 150);
+}
+
+function recommendMovies1() {
+  alert("Filmes recomendados: 'Meu Primeiro Amor', 'O Rei Leão', 'Vida de Inseto'");
+}
+
+function recommendMovies2() {
+  alert("Filmes recomendados: 'Harry Potter', 'Para Todos os Garotos que Já Amei', 'Jogos Vorazes'");
+}
+
+function recommendMovies3() {
+  alert("Filmes recomendados: 'Exterminador do Futuro', 'O Poderoso Chefão', 'Interestelar'");
+}
+
+function draw() {
+  // Desenho de fundo ou animações vão aqui
+}
